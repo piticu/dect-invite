@@ -46,7 +46,7 @@ if st.button('Generează invitație'):
                 font_title = ImageFont.truetype('./IMPACT.TTF', 36)
                 font_rezervare = ImageFont.truetype('./IMPACT.TTF', 28)
             except IOError:
-                st.error("Font file not found. Ensure 'arial.ttf' is available.")
+                st.error("Fișierul fontului nu a fost găsit. Verifică dacă fontul este instalat.")
                 st.stop()
 
             # Function to wrap text
@@ -105,7 +105,7 @@ if st.button('Generează invitație'):
             output.seek(0)
 
             # Display the modified image
-            st.image(img, caption='Modified Image', use_container_width=True)
+            st.image(img, caption='Invitația generată.', use_container_width=True)
 
             # Provide a download button
             st.download_button(
@@ -115,6 +115,6 @@ if st.button('Generează invitație'):
                 mime="image/webp"
             )
         except Exception as e:
-            st.error(f"An error occurred: {e}")
+            st.error(f"Shame! Shame! Shame! {e}")
     else:
-        st.error("Please complete all fields.")
+        st.error("🔥 Completează toate câmpurile, inclusiv imaginea de fundal.")
