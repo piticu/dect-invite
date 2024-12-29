@@ -43,8 +43,8 @@ if st.button('Generează invitație'):
 
             # Set font and size
             try:
-                font_title = ImageFont.truetype('impact.ttf', 36)
-                font_rezervare = ImageFont.truetype('impact.ttf', 28)
+                font_title = ImageFont.truetype('./IMPACT.TTF', 36)
+                font_rezervare = ImageFont.truetype('./IMPACT.TTF', 28)
             except IOError:
                 st.error("Font file not found. Ensure 'arial.ttf' is available.")
                 st.stop()
